@@ -108,7 +108,7 @@ function ModalNewTool () {
                   required={true}/>
               </FormGroup>
               <FormGroup>
-                <Label>Tags (não colocar '#')</Label>
+                <Label>Tags (don't use '#')</Label>
                 <Input
                   type='text'
                   name='tags'

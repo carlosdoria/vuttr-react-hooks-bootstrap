@@ -53,7 +53,7 @@ function ModalDelete (props) {
           <Button color="secondary" onClick={toggle}>
             Cancel
           </Button>
-          <Button color="primary" onClick={() => deleteAndToggleModal()}>
+          <Button color="danger" onClick={() => deleteAndToggleModal()}>
             Yes, remove
           </Button>{' '}
         </ModalFooter>

@@ -8,8 +8,8 @@ function Header () {
       <Wrapper>
         <a href='https://v4company.com/home/' target='_black'>
           <Logo
-            src='//d9hhrg4mnvzow.cloudfront.net/v4company.com/home/d88fcaeb-v4logo-ste-white_104w01704m014005003028.png'
-            alt='Logo V4 Company Marketing Digital'/>
+            src='Logo.png'
+            alt='Quadrado com um V e um 4 representando a logo da empresa, e um texto ao lado com Company.com'/>
         </a>
       </Wrapper>
     </Container>
