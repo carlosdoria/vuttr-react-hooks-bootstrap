@@ -6,14 +6,14 @@ function ModalSucess (props) {
   return(
     props.method === 'delete' ?
       <Modal isOpen={props.visible} modalTransition={{ timeout: 400 }}>
-        <ModalHeader>Sucess</ModalHeader>
+        <ModalHeader>Success</ModalHeader>
         <ModalBody>
-          Ferramenta deleteda com sucesso!
+          Tool successfully deleted!
         </ModalBody>
       </Modal>
     :
       <Modal isOpen={props.visible} modalTransition={{ timeout: 400 }}>
-        <ModalHeader>Sucess</ModalHeader>
+        <ModalHeader>Success</ModalHeader>
         <ModalBody>
           Tool successfully registered!
         </ModalBody>
