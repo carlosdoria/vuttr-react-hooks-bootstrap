@@ -4,11 +4,10 @@ import { ToolsContext } from '../../context/context';
 import  ModalSucess from '../ModalSucess/modalSucess';
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, FormGroup, Form, Label } from 'reactstrap';
-import { Wrapper } from './styles';
 
 function ModalNewTool () {
 
-  // useContext utilizado para importar funcionalidade do context
+  // useContext utilizado para importar funcionalidade do context.
   const context = useContext(ToolsContext);
 
   // State responsável por controlar quando o modalNewTool deve aparecer em tela.
@@ -38,7 +37,7 @@ function ModalNewTool () {
 
   // Armazena os valores dos input's no state tools.
   const handleChange = event => {
-    // If utilizado para verificar se o conteúdo que esta sendo alterado é o das tag's.
+    // if utilizado para verificar se o conteúdo que esta sendo alterado é o das tag's.
     if (event.target.name === 'tags') {
       // Craiada variável para permitir a utilização do metódo split e assim criar um array de tag's, usei esse metódo para que no momento da renderização pudesse utilizar o .map para renderizar os elementos do array com um # antes.
       let word = event.target.value
@@ -58,14 +57,12 @@ function ModalNewTool () {
 
     // Aguarda 1.5s para mudar o state sucessNewTool para false.
     setTimeout(() => setSucessNewTool(false), 1500)
-
-
     toggle()
   }
 
   // Utilizei a biblioteca do bootstrap para evitar a criação de um modal, desse modo precisei somente alterar algumas funcionalidades do modal.
   return(
-    <Wrapper>
+    <div>
       <Button
         // color='secondary'
         className='w-100 d-flex justify-content-center'
@@ -130,7 +127,7 @@ function ModalNewTool () {
       </Modal>
       {/* Utilizado prop drilling para informar se o ModalSucess deve estar visível ou não */}
       <ModalSucess visible={sucessNewTool} method='add' />
-    </Wrapper>
+    </div>
   )
 }
 

@@ -1,16 +1,15 @@
 import { useState, createContext } from 'react';
-// import axios from 'axios';
 
 import { Api, searchGlobal, searchTags } from '../services/api';
 
-// Context utilizado para exportar e gerenciar estados e funcionalidades para toda a aplicação, evitando assim o prop drilling
+// Context utilizado para exportar e gerenciar estados e funcionalidades para toda a aplicação, evitando assim o prop drilling.
 export const ToolsContext = createContext();
 
 const ToolsProvider = ({ children }) => {
   // Armazena a response da requisição.
   const [list, setList] = useState([]);
 
-  // Armazenar o conteúdo que será pesquisado.
+  // Armazena o conteúdo que será pesquisado.
   const [search, setSearch] = useState('');
 
   // State necessário para poder usar o clear Timeout, pois essa funcionalidade exige que o setTimeout seja atribuido a uma variável.

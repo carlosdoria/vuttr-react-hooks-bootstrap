@@ -32,11 +32,6 @@ button {
   font-family: var(--font-title-others);
 }
 
-/* button {
-  font-family: var(--font-title-others);
-  background: ;
-} */
-
 * {
   box-sizing: border-box;
 }

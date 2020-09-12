@@ -1,4 +1,3 @@
-
 import Head from 'next/head';
 import ToolsProvider from '../context/context';
 import Header from '../components/Header/header';

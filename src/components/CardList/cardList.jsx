@@ -5,13 +5,13 @@ import ModalNewTool from '../ModalNewTool/modalNewTool';
 import AlertNotFound from '../AlertNotFound/alertNotFound';
 import Cards from '../Card/card'
 
-import { InputGroup, Input, Alert } from 'reactstrap';
+import { InputGroup, Input } from 'reactstrap';
 import { Bar, InputCheckBox, P, ListCard } from './styles';
 
 
 function CardList() {
 
-  // useContext utilizado para importar funcionalidade do context
+  // useContext utilizado para importar funcionalidade do context.
   const context = useContext(ToolsContext);
 
   // useEffect utilizado para fazer a renderização da lista. Os parametros passados no final do useEffect fazendo com que a lista seja renderizada sempre que eles forem alterados.

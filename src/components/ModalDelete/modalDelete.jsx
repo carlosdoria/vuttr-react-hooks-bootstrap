@@ -7,7 +7,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 function ModalDelete (props) {
 
-    // useContext utilizado para importar funcionalidade do context
+  // useContext utilizado para importar funcionalidade do context.
   const context = useContext(ToolsContext);
 
   // State responsável por controlar quando o modalNewTool deve aparecer em tela.
