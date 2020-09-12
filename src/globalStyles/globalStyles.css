@@ -1,0 +1,42 @@
+:root {
+  font: 80%;
+
+  /* criadas variáveis de cores e fontes para facilitar a alteração delas se necessário. */
+  --color-red: rgb(223, 46, 48);
+  --color-black: rgb(53, 51, 51);
+  --color-green: rgba(0, 178, 51);
+  --color-grey: rgba(225, 224, 224);
+
+  /* Indicada para o corpo do texto. */
+  --font-body-text: 'Questrial', sans-serif;
+
+  /* Indicada para os destaques. */
+  --font-highlights: 'Bebas Neue', sans-serif;
+
+  /* Indicada para títulose diversos. */
+  --font-title-others: 'Open Sans', sans-serif;
+}
+
+/* Font-family foi passada através das tag's nesse documento para evitar uma alteração em cada componente, ficando assim mais facil de fazer o controle das fontes */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body-text);
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: var(--font-title-others);
+}
+
+/* button {
+  font-family: var(--font-title-others);
+  background: ;
+} */
+
+* {
+  box-sizing: border-box;
+}
