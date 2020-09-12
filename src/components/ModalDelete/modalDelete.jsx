@@ -23,15 +23,11 @@ function ModalDelete (props) {
   const deleteAndToggleModal = () => {
     context.deleteCard(props.id)
 
-    // O trecho seguinte do código limpa o conteúdo do search após o delete, desse modo a lista passa a ser  renderizada por completa. Esse trecho não esta ativo por uma preferência pessoal, já que eu prefiro que o search continue com o seu conteúdo, porém esse trexo pode ser descomentado e assim o search será limpo após o delete do Card.
-    // context.changeWordSearch('')
-
-    // Torna visivel o setSucessDeleteTool, para informar ao cliente que a ferramenta foi deletada com sucesso.
+    // Torna visível o setSucessDeleteTool, para informar ao cliente que a ferramenta foi deletada com sucesso.
     setSucessDeleteTool(true)
 
     // Aguarda 1.5s para mudar o state setSucessDeleteTool para false.
     setTimeout( () => setSucessDeleteTool(false), 1500)
-    // setTimeout(() => setSucessModal(false), 1800)
     toggle()
   }
 

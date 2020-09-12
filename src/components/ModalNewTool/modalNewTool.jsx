@@ -52,14 +52,14 @@ function ModalNewTool () {
   const submitTool = event => {
     event.preventDefault();
     context.postNewTool(tools)
-      // O trecho seguinte do código limpa o conteúdo do search após a tool ser adicionada, desse modo a lista será renderizada por completa. Esse trexo encontra-se ativa por uma preferência pessoal, para o cliente veja a lista completa após a adição da tool, porém esse trecho pode ser comentado e assim o conteúdo do search permanecerá após o submit.
-    context.changeWordSearch('')
 
     // Torna visivel o sucessNewTool, para informar ao cliente que a ferramenta foi adicionada com sucesso.
     setSucessNewTool(true)
 
     // Aguarda 1.5s para mudar o state sucessNewTool para false.
     setTimeout(() => setSucessNewTool(false), 1500)
+
+
     toggle()
   }
 

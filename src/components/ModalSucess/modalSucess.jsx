@@ -1,4 +1,5 @@
 // Esse modal informa ao cliente que a sua ferramenta foi adicionada com sucesso.
+// Foi utilizado modal no lugar de um Toast, pois encontrei alguns problemas na utilização do toast.
 
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 

@@ -52,8 +52,7 @@ const ToolsProvider = ({ children }) => {
       .then( response => {
         console.log(response.statusText)
       })
-      // Criado setTimeout para permitir que a mensagem apareca.
-      setTimeout( () => renderList(), 1500)
+      renderList()
   }
 
   // Deleta um Card de acordo com o id que passado.
@@ -64,7 +63,7 @@ const ToolsProvider = ({ children }) => {
   }
 
   return(
-    <ToolsContext.Provider value={{ renderList, list,changeWordSearch, changeParamSearch, search, tagsSearch, postNewTool, deleteCard }}>
+    <ToolsContext.Provider value={{ renderList, list,changeWordSearch, changeParamSearch, search, tagsSearch, postNewTool, deleteCard, setTagsSearch, tagsSearch }}>
       {children}
     </ToolsContext.Provider>
   )
